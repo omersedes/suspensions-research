@@ -5,6 +5,16 @@ import pandas as pd
 import numpy as np
 from matplotlib import pyplot
 
+
+## Description
+
+## Required Parameters
+#These can be input manually or be parsed from the file name
+NUMBER_OF_PARTICLES = 1000
+VOLUME_FRACTION = 0.79
+
+
+
 ## Functions
 #############################################################
 def get_shear_rate(filename):
