@@ -5,11 +5,13 @@ import networkx as nx
 import numpy as np
 
 def main():
+
+    #Change the following values based on your environment
     INPUT_PATH = '/Users/omersedes/Documents/Personal/PostPhD/suspensions-research/KCoreExtraction/data/input'
     OUTPUT_PATH = '/Users/omersedes/Documents/Personal/PostPhD/suspensions-research/KCoreExtraction/data/output'
 
-    Cycles = 4001
-    NumberofParticles = 2000
+    Cycles = 201
+    NumberofParticles = 1000
 
     AverageDegree = np.zeros(Cycles)
     AverageDegree_Net = np.zeros(Cycles)
@@ -21,11 +23,11 @@ def main():
     Coreness = np.zeros((Cycles, NumberofParticles), dtype=int)
 
     # Open interaction file - Input
-    int_file_name = os.path.join(INPUT_PATH, 'int_D2N2000VF0.77Bidi1.4_0.5Square_1_pardata_phi0.77_stress2cl.dat')
+    int_file_name = os.path.join(INPUT_PATH, 'int_D2N1000VF0.79Bidi3_0.5Square_1_nobrownian_2D_stress0.5623r.dat')
     int_file = open(int_file_name, 'r')
 
     # Open coreness file - Output
-    core_file_name = os.path.join(OUTPUT_PATH, 'coreness_D2N2000VF0.77Bidi1.4_0.5Square_1_pardata_phi0.77_stress2cl.csv')
+    core_file_name = os.path.join(OUTPUT_PATH, 'coreness_D2N1000VF0.79Bidi3_0.5Square_1_nobrownian_2D_stress0.5623r.csv')
     core_file = open(core_file_name, 'w')
 
     # Read until the end of the header lines
