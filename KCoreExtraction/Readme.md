@@ -14,12 +14,12 @@
 
 5. Change the following variables in the source file 'CalculateKcorenessFromIntFile.py', save and close the file:
 
-    `INPUT_PATH =`
-    `OUTPUT_PATH = KCoreExtraction/data/output'`
-    `input_filename =`
-    `output_filename =`
-    `Cycles =`
-    `NumberofParticles =`
+    `INPUT_PATH =
+     OUTPUT_PATH =
+     input_filename =
+     output_filename =
+     Cycles =
+     NumberofParticles =`
 
 6. Run the script using the following command:
   `python3 src/CalculateKcorenessFromIntFile.py`
